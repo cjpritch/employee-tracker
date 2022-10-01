@@ -1,5 +1,4 @@
 const fetch = require('node-fetch');
-const console = require('console.table');
 
 // get all departments
 const getDepts = async () => {

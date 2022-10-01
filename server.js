@@ -1,7 +1,7 @@
 const express = require('express');
 const db = require('./db/connection');
 const apiRoutes = require('./routes');
-
+const { prompt } = require('./utils/prompts');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -20,6 +20,5 @@ db.connect(err => {
   app.listen(PORT, () => {    
   });
 })
-
 
 prompt();
